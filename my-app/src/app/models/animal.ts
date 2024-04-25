@@ -1,4 +1,5 @@
-class Animal{
+
+export class Animal{
 
   public nome: string = "";
   public especie: string = "";

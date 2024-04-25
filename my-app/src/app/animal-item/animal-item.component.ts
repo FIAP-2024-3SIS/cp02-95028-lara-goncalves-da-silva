@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Animal } from '../models/animal';
 
 @Component({
@@ -23,5 +23,8 @@ export class AnimalItemComponent {
   }
 
   animal: Animal;
+
+  @input
+
 
 }

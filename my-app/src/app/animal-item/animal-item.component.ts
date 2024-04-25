@@ -9,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AnimalItemComponent {
 
+  /**
+   *
+   */
+  constructor() {
+    this.animal = new Animal();
+    this.animal.nome = "Mingau";
+    this.animal.especie = "Felino";
+    this.animal.idade = 18;
+    this.animal.sexo ="macho";
+
+  }
+
+  animal: Animal;
+
 }

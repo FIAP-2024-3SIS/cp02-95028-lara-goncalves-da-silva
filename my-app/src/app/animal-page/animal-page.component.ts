@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Animal } from '../models/animal';
 import { AnimalItemComponent } from "../animal-item/animal-item.component";
-
+import { CommonModule } from '@angular/common';
 @Component({
     selector: 'app-animal-page',
     standalone: true,
     templateUrl: './animal-page.component.html',
     styleUrl: './animal-page.component.css',
-    imports: [AnimalItemComponent]
+    imports: [AnimalItemComponent, CommonModule]
 })
 export class AnimalPageComponent {
   /**

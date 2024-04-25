@@ -1,5 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Animal } from '../models/animal';
+
 
 @Component({
   selector: 'app-animal-item',
@@ -14,17 +15,7 @@ export class AnimalItemComponent {
    *
    */
   constructor() {
-    this.animal = new Animal();
-    this.animal.nome = "Mingau";
-    this.animal.especie = "Felino";
-    this.animal.idade = 18;
-    this.animal.sexo ="macho";
-
   }
 
-  animal: Animal;
-
-  @input
-
-
+  @Input() animal: Animal = new Animal ("", "", 0, "");
 }
